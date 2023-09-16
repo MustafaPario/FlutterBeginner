@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_firstapp/navigration.dart';
+import 'package:my_firstapp/screens/screen1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,14 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter App',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hello"),
+      home: SafeArea(
+        child: Scaffold(
+          body: ScreenOne(),
         ),
-        body: BottomNav(),
       ),
     );
   }
