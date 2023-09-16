@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_firstapp/components/rowNav.dart';
 
 class FavouriteScreen extends StatelessWidget {
   const FavouriteScreen({super.key});
@@ -6,7 +7,11 @@ class FavouriteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("favourite"),
+      body: ListView(
+        children: [
+          RowNavBar(),
+        ],
+      ),
     );
   }
 }
