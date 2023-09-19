@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_firstapp/widgets/burger/popularItem.dart';
 import 'package:my_firstapp/widgets/textbutton.dart';
 
-class BurgerScreen extends StatefulWidget {
-  const BurgerScreen({super.key});
+class KababScreen extends StatefulWidget {
+  const KababScreen({super.key});
 
   @override
-  State<BurgerScreen> createState() => _BurgerScreenState();
+  State<KababScreen> createState() => _KababScreenState();
 }
 
-class _BurgerScreenState extends State<BurgerScreen> {
+class _KababScreenState extends State<KababScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
             title: const Text(
-              "Burgers's  Menu",
+              "Kabab's  Menu",
             ),
             actions: const [
               Icon(Icons.search),
@@ -56,7 +55,6 @@ class _BurgerScreenState extends State<BurgerScreen> {
                   ],
                 ),
               ),
-              PopularCategory()
             ],
           ),
         ),

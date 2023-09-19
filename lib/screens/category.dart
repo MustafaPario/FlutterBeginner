@@ -16,6 +16,7 @@ class CategoryScreen extends StatelessWidget {
             DashboardTwo(),
 
             //add caregory items
+
             CategoryItems(),
 
             //end items widget

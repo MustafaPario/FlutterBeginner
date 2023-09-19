@@ -30,7 +30,7 @@ class _RowNavBarState extends State<RowNavBar> {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => HomeScreen()));
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.home,
               ),
               iconSize: 27,
