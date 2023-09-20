@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_firstapp/components/dashboard.dart';
+import 'package:my_firstapp/components/home_dashboard.dart';
 import 'package:my_firstapp/components/product_container.dart';
 import 'package:my_firstapp/components/rowNav.dart';
 import 'package:my_firstapp/components/slider_container.dart';
@@ -39,14 +39,11 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 20),
+                padding: EdgeInsets.only(left: 20, bottom: 6),
                 child: Text(
                   'Recommended',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w400),
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
                 ),
-              ),
-              SizedBox(
-                height: 7,
               ),
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -54,22 +51,22 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     ProductContainer(
                       title: "Zinger Burger",
-                      price: "\$: 99.6",
+                      price: "\$99",
                       picture: imagesLinks.image1,
                     ),
                     ProductContainer(
                       title: "Chicken Broast",
-                      price: "\$: 160",
+                      price: "\$160",
                       picture: imagesLinks.image2,
                     ),
                     ProductContainer(
-                      title: "Chicken Roll",
-                      price: "\$: 50",
-                      picture: imagesLinks.image3,
+                      title: "Kabab",
+                      price: "\$80",
+                      picture: "assets/images/kabab.png",
                     ),
                     ProductContainer(
                       title: "Beef Burger",
-                      price: "\$: 100.7",
+                      price: "\$: 100",
                       picture: imagesLinks.image4,
                     ),
                   ],

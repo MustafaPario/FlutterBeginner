@@ -15,10 +15,10 @@ class ProductContainer extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 24),
       child: Container(
-        margin: EdgeInsets.only(right: 30),
+        margin: EdgeInsets.only(right: 30, bottom: 20),
         decoration: BoxDecoration(
           color: const Color.fromARGB(255, 232, 233, 239),
-          borderRadius: BorderRadius.circular(16.0),
+          borderRadius: BorderRadius.circular(24.0),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.5),
@@ -31,30 +31,34 @@ class ProductContainer extends StatelessWidget {
         child: Column(
           children: [
             const SizedBox(
-              height: 12,
+              height: 5,
             ),
             Image.network(
                 picture ??
                     "https://images.unsplash.com/flagged/photo-1587302164675-820fe61bbd55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGVtb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
-                width: 90,
-                height: 90),
-            const SizedBox(height: 12),
+                width: 100,
+                height: 100),
+            const SizedBox(height: 8),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  title ?? "Lemon",
+                  title ?? "Burger",
                   style: const TextStyle(
                       fontWeight: FontWeight.w600, fontSize: 15),
                 ),
-                const Text('Organic'),
+                SizedBox(
+                  height: 4,
+                ),
+                const Text('Fast Food'),
                 const SizedBox(
-                  height: 12,
+                  height: 10,
                 ),
               ],
             ),
             Container(
-              width: 150,
+              // margin: EdgeInsets.only(bottom: 30),
+              width: 140,
               height: 30,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
@@ -63,7 +67,7 @@ class ProductContainer extends StatelessWidget {
               child: Row(
                 children: [
                   const Padding(padding: EdgeInsets.only(left: 30)),
-                  const Text("Unit "),
+                  const Text("Unit: "),
                   Text(
                     price ?? "\$: 100",
                     style: const TextStyle(
@@ -71,7 +75,7 @@ class ProductContainer extends StatelessWidget {
                   ),
                   const Spacer(),
                   const CircleAvatar(
-                    radius: 10,
+                    radius: 13,
                     backgroundImage: AssetImage("assets/images/plus.png"),
                   )
                 ],

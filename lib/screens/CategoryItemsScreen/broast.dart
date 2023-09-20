@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_firstapp/widgets/textbutton.dart';
 
 class BroastScreen extends StatefulWidget {
   const BroastScreen({super.key});
@@ -33,28 +32,29 @@ class _BroastScreenState extends State<BroastScreen> {
               )
             ]),
         body: Padding(
-          padding: const EdgeInsets.only(left: 24, right: 24),
+          padding: const EdgeInsets.only(left: 24, right: 24, top: 40),
           child: Column(
             children: [
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    Text_Button(
-                      Buttontitle: 'Popular',
+              Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Color(0xFFF9B023),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(24),
+                  ),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Center(
+                    child: Text(
+                      "Delicious Broast Menu",
+                      style:
+                          TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
                     ),
-                    Text_Button(
-                      Buttontitle: 'Low Price',
-                    ),
-                    Text_Button(
-                      Buttontitle: 'Deals',
-                    ),
-                    Text_Button(
-                      Buttontitle: 'Special',
-                    ),
-                  ],
+                  ),
                 ),
               ),
+              // PopularCategory(),
             ],
           ),
         ),
