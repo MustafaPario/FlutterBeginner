@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_firstapp/screens/CategoryItemsScreen/burger.dart';
 
-class PopularCategory extends StatelessWidget {
-  PopularCategory({super.key});
+class BurgerCategoryMenu extends StatelessWidget {
+  BurgerCategoryMenu({super.key});
 
   final List<Map<String, dynamic>> gridMap = [
     {

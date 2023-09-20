@@ -55,7 +55,7 @@ class _BurgerScreenState extends State<BurgerScreen> {
                   ),
                 ),
               ),
-              PopularCategory(),
+              BurgerCategoryMenu(),
             ],
           ),
         ),

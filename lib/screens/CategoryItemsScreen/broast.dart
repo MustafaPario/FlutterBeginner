@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:my_firstapp/widgets/broast/broastcategorydeails.dart';
 
 class BroastScreen extends StatefulWidget {
   const BroastScreen({super.key});
@@ -54,7 +55,7 @@ class _BroastScreenState extends State<BroastScreen> {
                   ),
                 ),
               ),
-              // PopularCategory(),
+              BroastCategoryDetail(),
             ],
           ),
         ),
