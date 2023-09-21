@@ -3,7 +3,7 @@ import 'package:my_firstapp/components/home_dashboard.dart';
 import 'package:my_firstapp/components/product_container.dart';
 import 'package:my_firstapp/components/rowNav.dart';
 import 'package:my_firstapp/components/slider_container.dart';
-import 'package:my_firstapp/widgets/image_links.dart';
+import 'package:my_firstapp/components/widgets/image_links.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

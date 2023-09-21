@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_firstapp/widgets/Kabab/kababcategorydetail.dart';
+import 'package:my_firstapp/components/widgets/Kabab/kababcategorydetail.dart';
 
 class KababScreen extends StatefulWidget {
   const KababScreen({super.key});

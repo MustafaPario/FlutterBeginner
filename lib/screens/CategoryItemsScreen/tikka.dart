@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_firstapp/widgets/tikka/tikkacategorydetails.dart';
+import 'package:my_firstapp/components/widgets/tikka/tikkacategorydetails.dart';
 
 class TikkaScreen extends StatefulWidget {
   const TikkaScreen({super.key});
@@ -56,7 +56,7 @@ class _TikkaScreenState extends State<TikkaScreen> {
                   ),
                 ),
               ),
-              TikkaCategoryMenu(),
+              TikkaCategoryScreen(),
             ],
           ),
         ),

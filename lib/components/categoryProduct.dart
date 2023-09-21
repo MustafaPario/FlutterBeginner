@@ -5,7 +5,7 @@ import 'package:my_firstapp/screens/CategoryItemsScreen/kabab.dart';
 import 'package:my_firstapp/screens/CategoryItemsScreen/roll.dart';
 import 'package:my_firstapp/screens/CategoryItemsScreen/sandwich.dart';
 import 'package:my_firstapp/screens/CategoryItemsScreen/tikka.dart';
-import 'package:my_firstapp/widgets/categoryproducts.dart';
+import 'package:my_firstapp/components/widgets/categoryproducts.dart';
 
 class CategoryItems extends StatefulWidget {
   const CategoryItems({super.key});

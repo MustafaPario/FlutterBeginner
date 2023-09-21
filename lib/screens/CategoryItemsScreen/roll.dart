@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_firstapp/widgets/roll/rollCategorydetail.dart';
+import 'package:my_firstapp/components/widgets/roll/rollCategorydetail.dart';
 
 class RollScreen extends StatefulWidget {
   const RollScreen({super.key});
@@ -56,7 +56,7 @@ class _RollScreenState extends State<RollScreen> {
                   ),
                 ),
               ),
-              RollCategoryMenu(),
+              RollCategoryScreen(),
             ],
           ),
         ),
