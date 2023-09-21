@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:my_firstapp/widgets/image_links.dart';
 
-class BurgerCategoryMenu extends StatelessWidget {
-  BurgerCategoryMenu({super.key});
+class BurgerCategoryMenu extends StatefulWidget {
+  const BurgerCategoryMenu({super.key});
 
+  @override
+  State<BurgerCategoryMenu> createState() => _BurgerCategoryMenuState();
+}
+
+class _BurgerCategoryMenuState extends State<BurgerCategoryMenu> {
   final List<Map<String, dynamic>> gridMap = [
     {
       "title": "JAG Burger",
@@ -35,21 +40,6 @@ class BurgerCategoryMenu extends StatelessWidget {
       "price": "\$170",
       "images": imagesLinks.burger6,
     },
-    {
-      "title": "JAG Burger",
-      "price": "\$110",
-      "images": imagesLinks.burger1,
-    },
-    {
-      "title": "Veggie Burger",
-      "price": "\$130",
-      "images": imagesLinks.burger2,
-    },
-    {
-      "title": "Grilled Burger",
-      "price": "\$114",
-      "images": imagesLinks.burger3,
-    },
   ];
 
   @override
@@ -60,8 +50,8 @@ class BurgerCategoryMenu extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 24, top: 24),
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            crossAxisSpacing: 10.0,
+            crossAxisCount: 2,
+            crossAxisSpacing: 60.0,
             mainAxisSpacing: 20.0,
             mainAxisExtent: 220,
           ),
@@ -80,7 +70,7 @@ class BurgerCategoryMenu extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Column(
+              child: ListView(
                 children: [
                   ClipRRect(
                     borderRadius: const BorderRadius.all(

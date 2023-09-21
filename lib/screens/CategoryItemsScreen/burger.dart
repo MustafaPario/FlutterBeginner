@@ -2,19 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:my_firstapp/widgets/burger/burgerCategoryDetail.dart';
 
-class BurgerScreen extends StatefulWidget {
+class BurgerScreen extends StatelessWidget {
   const BurgerScreen({super.key});
 
-  @override
-  State<BurgerScreen> createState() => _BurgerScreenState();
-}
-
-class _BurgerScreenState extends State<BurgerScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+            backgroundColor: Color(0xFF2A4BA0),
             title: const Text(
               "Burgers's  Menu",
             ),
@@ -33,7 +29,7 @@ class _BurgerScreenState extends State<BurgerScreen> {
               )
             ]),
         body: Padding(
-          padding: const EdgeInsets.only(left: 24, right: 24, top: 40),
+          padding: const EdgeInsets.only(left: 24, right: 24, top: 20),
           child: Column(
             children: [
               Container(

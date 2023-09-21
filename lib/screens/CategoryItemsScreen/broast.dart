@@ -15,6 +15,7 @@ class _BroastScreenState extends State<BroastScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+            backgroundColor: Color(0xFF2A4BA0),
             title: const Text(
               "Broast  Menu",
             ),

@@ -17,9 +17,9 @@ class _CategoryProductsWidgetState extends State<CategoryProductsWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 30, top: 30, left: 50, right: 20),
-      width: 160,
-      height: 200,
+      margin: EdgeInsets.only(bottom: 15, top: 30, left: 40, right: 30),
+      width: 170,
+      height: 220,
       decoration: BoxDecoration(
         color: const Color.fromARGB(255, 232, 233, 239),
         borderRadius: BorderRadius.circular(16.0),
@@ -43,8 +43,8 @@ class _CategoryProductsWidgetState extends State<CategoryProductsWidget> {
             ),
             child: Image.network(
               widget.image ?? "assets/images/kabab.png",
-              height: 100,
-              width: 100,
+              height: 110,
+              width: 110,
             ),
           ),
           const SizedBox(
@@ -54,7 +54,8 @@ class _CategoryProductsWidgetState extends State<CategoryProductsWidget> {
             children: [
               Text(
                 widget.text ?? "Burger's",
-                style: const TextStyle(fontWeight: FontWeight.w800),
+                style:
+                    const TextStyle(fontWeight: FontWeight.w800, fontSize: 16),
               ),
               const SizedBox(
                 height: 8,

@@ -15,6 +15,7 @@ class _SandwichScreenState extends State<SandwichScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+            backgroundColor: Color(0xFF2A4BA0),
             title: const Text(
               "Sandwich Menu",
             ),
